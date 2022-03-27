@@ -1,46 +1,53 @@
-var saveBtn = $(".saveBtn");
-var time = moment();
+var currentDay = moment().format("dddd, MMMM Do, YYYY, h:mm a");
+$("#currentDay").append(currentDay);
+    
 
 
-$("#currentDay").text(time.format("dddd, MMMM Do, YYYY"));
-var now = new Date().getHours();
-console.log(now);
+function changeColor() {
+    var currentTime = moment().hours();
 
+    $(".time-block").each(function () {
+        var scheduleTime = parseInt($(this).attr("id"));
 
-
-function textAreaColor() {
-    var now = time.hours();
-   $('.schedule').each(function () {
-      var scheduleTime = parseInt($(this).attr("id"));
-  
-      if (scheduleTime > now) {
-        $(this).addClass("future");
-      } else if (scheduleTime === now) {
-        $(this).addClass("present");
-      } else {
-        $(this).addClass("past");
-      }
+        if (scheduleTime < currentTime) {
+                $(this).addClass("past");
+        } else if (scheduleTime === currentTime) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+        } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+        }
     });
-  }
-  
-  textAreaColor();
+
+}
+
+changeColor();
 
 
-  $(".saveBtn").click(function () { 
-    // console.log(this);
-    var text = $(this).siblings(".schedule").val();
-    var time = $(this).parent().attr("id");
-    // console.log(text, time);
-    localStorage.setItem(time, text);
-    console.log(text);
+
+
+
+$(".saveBtn").click(function () { 
+    var scheduleTime = $(this).parent().attr("id");
+    var scheduleText = $(this).siblings(".schedule").val();
+    localStorage.setItem(scheduleTime, scheduleText);
 });
+
+
+
+
+
 
 $("#9 .schedule").val(localStorage.getItem("9"));
 $("#10 .schedule").val(localStorage.getItem("10"));
 $("#11 .schedule").val(localStorage.getItem("11"));
-$("12 .schedule").val(localStorage.getItem("12"));
+$("#12 .schedule").val(localStorage.getItem("12"));
 $("#13 .schedule").val(localStorage.getItem("13"));
 $("#14 .schedule").val(localStorage.getItem("14"));
 $("#15 .schedule").val(localStorage.getItem("15"));
 $("#16 .schedule").val(localStorage.getItem("16"));
 $("#17 .schedule").val(localStorage.getItem("17"));
+
+
