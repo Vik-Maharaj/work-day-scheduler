@@ -1,8 +1,10 @@
+// displays the date and time at the top of the page
 var currentDay = moment().format("dddd, MMMM Do, YYYY, h:mm a");
 $("#currentDay").append(currentDay);
     
 
 
+// checks the current time against the time black and changes the color of the block
 function changeColor() {
     var currentTime = moment().hours();
 
@@ -27,8 +29,7 @@ changeColor();
 
 
 
-
-
+// set the user input into local storage
 $(".saveBtn").click(function () { 
     var scheduleTime = $(this).parent().attr("id");
     var scheduleText = $(this).siblings(".schedule").val();
@@ -37,9 +38,7 @@ $(".saveBtn").click(function () {
 
 
 
-
-
-
+// retrieves and displays the user input from local stoage 
 $("#9 .schedule").val(localStorage.getItem("9"));
 $("#10 .schedule").val(localStorage.getItem("10"));
 $("#11 .schedule").val(localStorage.getItem("11"));
