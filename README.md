@@ -2,9 +2,9 @@
 
 ## Description
 
-During any given work day, there is a lot to do! Sometimes it feels that there are never enough hours during the day to get anything done, in fact, most days feel like that. Given how hectic a day can seem, and how difficult it can be to manage tasks, assignments, and other work-day responsibilities all at once, the best way to combat that is to schedule out any given work day. A good schedule can help keep items focused and manageable, and allow certain activities to be completed at the right times, freeing up mental bandwidth and limiting stress and anxiety so that a person can focus on the task of the moment.
+During any given work day, there is a lot to do! Sometimes it feels like there are never enough hours during the day to get anything done. Given how hectic a day can seem, and how difficult it can be to manage tasks, assignments, and other work-day responsibilities, the best way to prevent that feeling is to schedule out any given work day. A good schedule can help keep items manageable, and allow certain activities to be completed at the right times, freeing up mental bandwidth and limiting stress and anxiety so that a person can focus on the task of the moment.
 
-With that in mind, the purpose of this project is to create a daily planner that allows a user to schedule their activities during the day, separating the activities into blocks of time. The segmented scheduler can be utilized by anyone, resides entirely online, and includes the following features:
+With that in mind, the purpose of this project is to create a daily planner that allows a user to schedule their activities during the day, separating them into blocks of time. The segmented scheduler can be utilized by anyone, resides entirely online, and includes the following features:
 
 - The scheduler is web-based and can be used by anyone with an internet connection
 - The app displays the current date and time at the top of the page
@@ -13,7 +13,7 @@ With that in mind, the purpose of this project is to create a daily planner that
 - The user can click into the time block and can schedule an event
 - Once the event is entered, the user can save the event and the item is stored in local storage and persists even if the page is refreshed
 
-By using this app, anyone can simply and effectively, manage their time better – something everyone can use a bit of help with.
+By using this app, anyone can simply and effectively manage their time better.
 
 Link to the deployed website: https://vik-maharaj.github.io/work-day-scheduler/
 
