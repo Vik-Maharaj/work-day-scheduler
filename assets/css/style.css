@@ -4,6 +4,17 @@ body {
   line-height: 1;
 }
 
+.lead {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.lead2 {
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 25px;
+}
+
 textarea{
   background: transparent;
   border: none;
@@ -28,18 +39,23 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  margin: 15px;
+  box-shadow: -1px 2px 4px 1px rgb(65, 65, 65);
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  /* border-top: .5px dashed #000000; */
+  /* border-style: solid; */
 }
 
 .past {
